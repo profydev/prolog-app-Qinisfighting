@@ -12,3 +12,7 @@ export default defineConfig({
     },
   },
 });
+
+module.exports = {
+  projectId: "tn25wy",
+};
