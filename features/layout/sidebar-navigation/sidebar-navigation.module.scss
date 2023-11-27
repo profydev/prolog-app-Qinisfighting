@@ -27,7 +27,6 @@
 }
 
 .fixedContainer {
-  composes: container;
   position: fixed;
 }
 
@@ -128,7 +127,6 @@
 }
 
 .linkList {
-  composes: list;
   flex: 1;
 }
 
