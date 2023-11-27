@@ -83,7 +83,9 @@ export function SidebarNavigation() {
               text="Support"
               iconSrc="/icons/support.svg"
               isCollapsed={isSidebarCollapsed}
-              onClick={() => alert("Support")}
+              onClick={() =>
+                (window.location.href = "mailto:yanqin.qualmann@gmail.com")
+              }
             />
             <MenuItemButton
               text="Collapse"
