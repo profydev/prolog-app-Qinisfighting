@@ -4,6 +4,8 @@ import { getIssues } from "@api/issues";
 import type { Page } from "@typings/page.types";
 import type { Issue } from "@api/issues.types";
 
+// where is the issue data coming from?
+
 const QUERY_KEY = "issues";
 
 export function getQueryKey(page?: number) {

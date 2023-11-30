@@ -27,7 +27,6 @@
 }
 
 .fixedContainer {
-  composes: container;
   position: fixed;
 }
 
@@ -128,8 +127,9 @@
 }
 
 .linkList {
-  composes: list;
   flex: 1;
+  padding: 0;
+  margin: 0;
 }
 
 .collapseMenuItem {
