@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { SidebarNavigation } from "../sidebar-navigation";
 import styles from "./page-container.module.scss";
+// eslint-disable-next-line no-restricted-imports
+import Footer from "features/projects/components/footer/Footer";
 
 type PageContainerProps = {
   children: React.ReactNode;
@@ -26,6 +28,7 @@ export function PageContainer({ children, title, info }: PageContainerProps) {
           <div className={styles.info}>{info}</div>
           {children}
         </div>
+        <Footer />
       </main>
     </div>
   );
