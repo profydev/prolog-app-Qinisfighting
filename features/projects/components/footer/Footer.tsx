@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { version } from "package.json";
+import packageInfo from "package.json";
 import styles from "./Footer.module.scss";
+
+const version = packageInfo.version;
 
 const Footer = () => {
   return (

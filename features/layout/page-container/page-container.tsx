@@ -2,7 +2,7 @@ import Head from "next/head";
 import { SidebarNavigation } from "../sidebar-navigation";
 import styles from "./page-container.module.scss";
 // eslint-disable-next-line no-restricted-imports
-import Footer from "features/projects/components/footer/Footer";
+import Footer from "@features/projects/components/footer/Footer";
 
 type PageContainerProps = {
   children: React.ReactNode;
