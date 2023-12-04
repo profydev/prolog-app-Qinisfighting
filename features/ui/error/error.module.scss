@@ -1,0 +1,36 @@
+.projectError {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 16px;
+  color: #d92d20;
+  border: 1.67px #d92d20 solid;
+  margin: 32px auto;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.projectErrorLeft {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.warningCircle {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border: 1.67px #d92d20 solid;
+  border-radius: 50%;
+  margin: auto 10px;
+}
+
+.projectErrorRight {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
