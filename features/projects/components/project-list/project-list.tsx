@@ -1,17 +1,19 @@
 import { ProjectCard } from "../project-card";
 import { useGetProjects } from "../../api/use-get-projects";
 import styles from "./project-list.module.scss";
+import Loader from "features/ui/loader/loader";
+import Error from "features/ui/error/error";
 
 export function ProjectList() {
   const { data, isLoading, isError, error } = useGetProjects();
 
   if (isLoading) {
-    return <div>Loading</div>;
+    return <Loader />;
   }
 
   if (isError) {
     console.error(error);
-    return <div>Error: {error.message}</div>;
+    return <Error />;
   }
 
   return (
