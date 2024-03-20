@@ -1,6 +1,7 @@
 @use "@styles/color";
 @use "@styles/space";
 @use "@styles/font";
+@use "@styles/breakpoint";
 
 .container {
   background: white;
@@ -57,4 +58,90 @@
 
 .pageNumber {
   font: font.$text-sm-medium;
+}
+
+.issueFilter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.issueFilterButton {
+  width: 247px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: color.$primary-600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.issueFilterDropdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: color.$gray-900;
+}
+
+.issueFilterDropdown select {
+  width: 160px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid color.$gray-300;
+  padding-left: 8px;
+}
+
+.issueFilterDropdown input {
+  width: 280px;
+  height: 44px;
+  border: none;
+  padding-left: 8px;
+}
+
+.issueFilterDropdown input:hover {
+  outline: none;
+}
+
+.issueFilterDropdownSearch {
+  border-radius: 8px;
+  border: 1px solid color.$gray-300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  color: color.$gray-500;
+}
+
+@media (max-width: breakpoint.$desktop) {
+  .issueFilter {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .issueFilterButton {
+    order: 2;
+    width: 100%;
+  }
+
+  .issueFilterDropdown select {
+    width: 100%;
+  }
+
+  .issueFilterDropdown {
+    flex-direction: column;
+    order: 1;
+    width: 100%;
+  }
+
+  .issueFilterDropdownSearch input {
+    width: 100%;
+  }
 }
